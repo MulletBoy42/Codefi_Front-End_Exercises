@@ -5,11 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "pwa-chrome",
+            "type": "pwa-msedge",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:5500",
-            "webRoot": "${workspaceFolder}"
+            "name": "Open accordian.html",
+            "file": "c:\\Users\\vince\\Documents\\GitHub\\Codefi_Front-End_Student-Notes\\Day4\\accordian.html"
         }
     ]
 }
