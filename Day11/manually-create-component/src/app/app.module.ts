@@ -8,8 +8,8 @@ import { HomeComponent } from './Home/Home.component';
 
 @NgModule({
   declarations: [
-   AppComponent,
-   HomeComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

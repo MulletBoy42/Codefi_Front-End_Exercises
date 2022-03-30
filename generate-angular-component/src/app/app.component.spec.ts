@@ -1,30 +1,31 @@
 import { TestBed } from '@angular/core/testing';
-import { HomeComponent } from './app.component';
+import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [
-        HomeComponent
+        AppComponent
       ],
     }).compileComponents();
   });
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(HomeComponent);
+    const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'manually-create-component'`, () => {
-    const fixture = TestBed.createComponent(HomeComponent);
+  it(`should have as title 'generate-angular-component'`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('manually-create-component');
+    expect(app.title).toEqual('generate-angular-component');
+  });
 
   it('should render title', () => {
-    const fixture = TestBed.createComponent(HomeComponent);
+    const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('manually-create-component app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('generate-angular-component app is running!');
   });
 });
