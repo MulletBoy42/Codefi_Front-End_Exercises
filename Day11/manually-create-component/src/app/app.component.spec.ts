@@ -26,5 +26,8 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain('manually-create-component app is running!');
-  });
+    })
+  })
 });
+
+
