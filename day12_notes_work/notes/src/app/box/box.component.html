@@ -1,3 +1,9 @@
-<div class="card mt-3 box">
-  <p class="text-center">I am a box!</p>
-</div>
+<p>
+  I am
+  <span [ngStyle]="{ color: getColor() }">{{ isEmpty ? "empty" : "full" }}</span>
+</p>
+
+
+
+<div class= "card" [ngClass]="{ emptyBox: isEmpty === true }"></div>
+
