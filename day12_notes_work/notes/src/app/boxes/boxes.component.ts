@@ -17,7 +17,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoxesComponent implements OnInit {
   canOpenMoreBoxes = false;
-  boxMockText = "You haven't opened a box in a while";
+  hasOpenedABox= false;
+  boxMockText = "";
+  boxName = ""
+  boxes = ["Box 1", "Box 2", "Box 3"];
+
 
   constructor() {}
 
@@ -28,6 +32,8 @@ export class BoxesComponent implements OnInit {
   }
 
   onOpenBox() {
+    this.hasOpenedABox = true;
+    this.boxes.push(this.boxName);
     this.boxMockText ='You just opened a box called: ${this.boxName}'
   }
 }

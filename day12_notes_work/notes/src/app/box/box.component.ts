@@ -2,7 +2,8 @@ constructor() {
   this.isEmpty = Math.random() > 0.5;
 }
 
-getColor()
+getColor() {
+  return this.isEmpty === true ? 'red' : 'green';
 }
 
 
